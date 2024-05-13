@@ -1,0 +1,190 @@
+/* imports */
+@import '../utils/reset.css';
+@import '../layout/header.css';
+@import '../layout/footer.css';
+/* ==================================== */
+
+/* Hero Section */
+.hero {
+	padding: 72px 0;
+}
+.hero__container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.hero__inner {
+	min-height: calc(100vh - 72px);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 10px;
+	line-height: 196.19%;
+}
+.hero__content {
+	display: grid;
+	gap: 16px;
+	max-width: 467px;
+	width: 100%;
+}
+.hero__title {
+	font-size: 36px;
+	font-weight: 900;
+}
+.hero__text {
+	font-size: 13px;
+	max-width: 430px;
+}
+.hero__link {
+	padding: 11px 24px;
+	background-color: var(--orange);
+	color: #fff;
+	font-weight: 900;
+	font-size: 15px;
+	line-height: inherit;
+	box-shadow: 0px 7px 35px 0px rgba(214, 100, 0, 0.22);
+	max-width: 212px;
+	width: 100%;
+	text-align: left;
+	transition: all 0.3s ease 0s;
+
+	&:hover {
+		transform: scale(1.1);
+		background-color: #b45400;
+	}
+}
+
+
+/* ==================================== */
+
+/* Catalog Section */
+
+.catalog {
+	padding-bottom: 136px;
+}
+
+.catalog__title {
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+.catalog__actions {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 36px;
+	max-width: 800px;
+	margin: 0 auto;
+}
+.catalog__link {
+	display: block;
+	max-width: 242px;
+	width: 100%;
+	white-space: nowrap;
+	text-align: center;
+	padding-block: 25px;
+	border-radius: 10px;
+	box-shadow: 0px 4px 11px 0px rgba(0, 0, 0, 0.25);
+	background-color: #fff;
+	font-size: 14px;
+	font-weight: 700;
+	transition: 0.3s ease 0s;
+	transition-property: transform background-color color;
+	&:hover {
+		transform: scale(1.1);
+		background-color: var(--orange);
+		color: #fff;
+	}
+}
+
+/* ==================================== */
+
+/* About Section */
+
+.about {
+	padding-bottom: 160px;
+}
+
+.about__title {
+	margin-bottom: 32px;
+	text-align: center;
+}
+
+.about__content {
+	padding-block: 30px;
+	display: flex;
+	justify-content: space-between;
+}
+.about__item {
+	display: flex;
+	align-items: center;
+	gap: 25px;
+}
+.about__number {
+	font-size: 50px;
+	font-weight: 900;
+}
+.about__text {
+	font-size: 13px;
+}
+
+/* ==================================== */
+
+/* Delivery Section */
+
+.delivery {
+	text-align: center;
+	padding-bottom: 135px;
+}
+
+.delivery__title {
+	margin-bottom: 45px;
+}
+
+.delivery__text {
+	font-size: 12px;
+}
+
+/*Media queries*/
+@media  screen and (max-width: 480px) {
+
+
+	.hero__container {
+		margin-top: 45px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	.hero__title {
+		font-size: 30px;
+		font-weight: 900;
+	}
+
+	.hero__inner {
+		min-height: calc(100vh - 72px);
+		display: flex;
+		flex-direction: column-reverse;
+		gap: 25px;
+		line-height: 196.19%;
+	}
+
+	.about__content {
+		padding-block: 30px;
+		display: flex;
+		flex-direction: column;
+		gap: 50px;
+	}
+
+
+	.catalog__link {
+		display: block;
+		max-width: 150px;
+		width: 100%;
+}
+
+
+
+
+/* ==================================== */
+}
